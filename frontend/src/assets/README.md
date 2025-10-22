@@ -1,0 +1,1 @@
+Put your images, icons, videos here (assets folder).
