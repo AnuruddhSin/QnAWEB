@@ -1,4 +1,3 @@
-// src/api/insightsApi.js
 import axios from 'axios';
 
 const api = axios.create({
@@ -6,7 +5,6 @@ const api = axios.create({
   timeout: 15000,
 });
 
-// attach token automatically
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem('qa_token');
   if (token) config.headers.Authorization = `Bearer ${token}`;
