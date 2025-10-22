@@ -63,7 +63,7 @@ The **Mini Q&A App** is an **full-stack project** built for collaborative learni
 ### ⚙️ Backend
 - Node.js  
 - Express.js  
-- MongoDB + Mongoose  
+- MongoDB   
 - JWT Authentication  
 - bcrypt for password hashing  
 - dotenv for environment variables  
