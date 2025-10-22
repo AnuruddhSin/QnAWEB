@@ -73,53 +73,89 @@ The **Mini Q&A App** is an **full-stack project** built for collaborative learni
 The project is organized as follows:
 
 ```bash
-		Mini-QA-App/
-		│
-		├── backend/
-		│ ├── server.js
-		│ ├── package.json
-		│ ├── .env
-		│ ├── config/
-		│ │ └── db.js
-		│ ├── controllers/
-		│ │ ├── authController.js
-		│ │ ├── questionController.js
-		│ │ └── answerController.js
-		│ ├── middleware/
-		│ │ └── authMiddleware.js
-		│ ├── models/
-		│ │ ├── User.js
-		│ │ ├── Question.js
-		│ │ └── Answer.js
-		│ ├── routes/
-		│ │ ├── authRoutes.js
-		│ │ ├── questionRoutes.js
-		│ │ └── answerRoutes.js
-		│ └── utils/
-		│ └── token.js
-		│
-		├── frontend/
-		│ ├── package.json
-		│ ├── public/
-		│ │ └── index.html
-		│ └── src/
-		│ ├── App.js
-		│ ├── index.js
-		│ ├── api/
-		│ │ └── axiosConfig.js
-		│ ├── components/
-		│ │ ├── Navbar.jsx
-		│ │ ├── QuestionCard.jsx
-		│ │ └── InsightChart.jsx
-		│ ├── pages/
-		│ │ ├── Login.jsx
-		│ │ ├── Register.jsx
-		│ │ ├── Dashboard.jsx
-		│ │ ├── AskQuestion.jsx
-		│ │ └── AnswerPage.jsx
-		│ └── styles/
-		│ ├── Login.css
-		│ ├── Dashboard.css
-		│ └── index.css
-		│
-		└── README.md
+	Mini-QA-App/
+	│
+	├── backend/
+	│ ├── src/
+	│ │ ├── config/
+	│ │ │ └── db.js
+	│ │ │
+	│ │ ├── database/
+	│ │ │ ├── db.js
+	│ │ │ 
+	│ │ ├── controllers/
+	│ │ │ ├── auth.controller.js
+	│ │ │ ├── user.controller.js
+	│ │ │ ├── question.controller.js
+	│ │ │ └── answer.controller.js
+	│ │ │
+	│ │ ├── middlewares/
+	│ │ │ ├── auth.middleware.js
+	│ │ │ ├── role.middleware.js
+	│ │ │ └── error.middleware.js
+	│ │ │
+	│ │ ├── models/
+	│ │ │ ├── User.js
+	│ │ │ ├── Question.js
+	│ │ │ └── Answer.js
+	│ │ │ └── Insights.js
+	│ │ │
+	│ │ ├── routes/
+	│ │ │ ├── auth.routes.js
+	│ │ │ ├── users.routes.js
+	│ │ │ ├── questions.routes.js
+	│ │ │ └── insights.routes.js
+	│ │ │
+	│ │ ├── utils/
+	│ │ │ └── authMiddleware.js
+	│ │ │
+	│ │ ├── .env.example
+	│ │ └── server.js
+	│ │
+	│ ├── .env.example
+	│ └── package.json
+	│
+	├── frontend/
+	│ ├── package.json
+	│ │
+	│ ├── public/
+	│ │ └── index.html
+	│ │
+	│ └── src/
+	│ ├── index.js
+	│ │
+	│ ├── api/
+	│ │ └── insightsApi.js
+	│ │
+	│ ├── components/
+	│ │ ├── ChartPanel.jsx
+	│ │ ├── Header.jsx
+	│ │ └── InsightForm.jsx
+	│ │ ├── InsightsTable.jsx
+	│ │ ├── KPIGrid.jsx
+	│ │ └── Spinner.jsx
+	│ │
+	│ ├── context/
+	│ │ ├── AuthContext.jsx
+	│ │
+	│ ├── pages/
+	│ │ ├── Login.jsx
+	│ │ ├── Register.jsx
+	│ │ ├── Manager_Insights.jsx
+	│ │ ├── AskQuestion.jsx
+	│ │ └── Question.jsx
+	│ │ └── QuestionDetail.jsx
+	│ │
+	│ └── styles/
+	│ │ ├── Login.cc
+	│ │ ├── Register.css
+	│ │ ├── Manager_Insights.css
+	│ │ ├── AskQuestion.css
+	│ │ └── Question.css
+	│ │ └── QuestionDetail.css
+	│ │ │
+	│ │ ├── .env.example
+	│ ├── main.jsx
+	│ ├── index.html
+	│
+	└── README.md
